@@ -1,0 +1,54 @@
+{
+	"ID": "3588940f45be91f7c0b47bae2573de0c",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6512,
+	"Data": [
+	{
+		"ID": "b9db437c48f012f0c4d193b824ddd847",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"Name": "Projectile1",
+		"StaticFlags": 0,
+		"Layer": 2,
+		"Tag": "Bullet"
+	},
+	{
+		"ID": "035289cd488e622d53509c89efca36dc",
+		"TypeName": "TrenchRun.Weaponry.Projectile",
+		"ParentID": "b9db437c48f012f0c4d193b824ddd847",
+		"V": {
+	"Speed": 2000.0,
+	"Damage": 25,
+	"MaximumLifetime": 8.0,
+	"Layers": {
+		"Mask": 5
+	}
+}
+	},
+	{
+		"ID": "0a9a86004f0f9a9030fc30ab8967eeab",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "b9db437c48f012f0c4d193b824ddd847",
+		"Name": "Sphere",
+		"Transform": {
+			"Scale": {
+				"X": 0.05000000074505806,
+				"Y": 0.05000000074505806,
+				"Z": 0.20000000298023225
+			}
+		},
+		"StaticFlags": 0,
+		"Layer": 2,
+		"Model": "dd86c4724bf734c4959d23b3c74faa05",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "952903b446bc240467051eb1630a24b9",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	}
+]
+}

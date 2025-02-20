@@ -1,0 +1,162 @@
+{
+	"ID": "48aeb69f498b73bc57f1a4b916ce5a0e",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6512,
+	"Data": [
+	{
+		"ID": "59009a2442e57b357e9ae3af4f11b929",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"Name": "Laser Spinner"
+	},
+	{
+		"ID": "e104434f47c3b4f04c01db89273fbf64",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "59009a2442e57b357e9ae3af4f11b929",
+		"Name": "Cube 0",
+		"Transform": {
+			"Scale": {
+				"X": 0.30000001192092898,
+				"Y": 5.5,
+				"Z": 0.30000001192092898
+			}
+		},
+		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "463e792d442361ca8b34ef9e9eca9689",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "b253f3b14bb5b90f895a50a0cb4de074",
+		"TypeName": "FlaxEngine.BoxCollider",
+		"ParentID": "59009a2442e57b357e9ae3af4f11b929",
+		"Name": "BoxCollider 1",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": -125.0,
+				"Z": 0.0
+			},
+			"Scale": {
+				"X": 10.0,
+				"Y": 0.20000000298023225,
+				"Z": 0.20000000298023225
+			}
+		},
+		"StaticFlags": 0,
+		"IsTrigger": true
+	},
+	{
+		"ID": "764aa8504a1a365e7b6e50bc4ce8684a",
+		"TypeName": "TrenchRun.Hazards.ContactDamage",
+		"ParentID": "b253f3b14bb5b90f895a50a0cb4de074",
+		"V": {
+	"DamageOwner": "59009a2442e57b357e9ae3af4f11b929",
+	"DamagePerTick": 3,
+	"TickRate": 10.0
+}
+	},
+	{
+		"ID": "1191d46d4bc215674fc3f582f4760753",
+		"TypeName": "TrenchRun.Hazards.Spinner",
+		"ParentID": "b253f3b14bb5b90f895a50a0cb4de074",
+		"V": {
+	"RotationAxis": {
+		"X": 0.0,
+		"Y": -1.0,
+		"Z": 0.0
+	},
+	"RotationPeriod": 8.0
+}
+	},
+	{
+		"ID": "6505578049495868ea877d9aec79ef9d",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "b253f3b14bb5b90f895a50a0cb4de074",
+		"Name": "Visuals",
+		"Transform": {
+			"Scale": {
+				"X": 1.0,
+				"Y": 0.5,
+				"Z": 0.5
+			}
+		},
+		"StaticFlags": 0,
+		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "952903b446bc240467051eb1630a24b9",
+					"ShadowsMode": 0,
+					"Visible": true,
+					"ReceiveDecals": false
+				}
+			]
+		}
+	},
+	{
+		"ID": "cd19f71c46f148fdc91d6eb848557eed",
+		"TypeName": "FlaxEngine.BoxCollider",
+		"ParentID": "59009a2442e57b357e9ae3af4f11b929",
+		"Name": "BoxCollider 2",
+		"Transform": {
+			"Scale": {
+				"X": 10.0,
+				"Y": 0.20000000298023225,
+				"Z": 0.20000000298023225
+			}
+		},
+		"StaticFlags": 0,
+		"IsTrigger": true
+	},
+	{
+		"ID": "a4f0e6e841568b05567e1cb633fab614",
+		"TypeName": "TrenchRun.Hazards.ContactDamage",
+		"ParentID": "cd19f71c46f148fdc91d6eb848557eed",
+		"V": {
+	"DamageOwner": "59009a2442e57b357e9ae3af4f11b929",
+	"DamagePerTick": 3,
+	"TickRate": 10.0
+}
+	},
+	{
+		"ID": "13ee685d4a1e5361250bbb934feddd40",
+		"TypeName": "TrenchRun.Hazards.Spinner",
+		"ParentID": "cd19f71c46f148fdc91d6eb848557eed",
+		"V": {
+	"RotationPeriod": 8.0
+}
+	},
+	{
+		"ID": "5c4f9906413853f5d757a5b62221efb6",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "cd19f71c46f148fdc91d6eb848557eed",
+		"Name": "Visuals",
+		"Transform": {
+			"Scale": {
+				"X": 1.0,
+				"Y": 0.5,
+				"Z": 0.5
+			}
+		},
+		"StaticFlags": 0,
+		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "952903b446bc240467051eb1630a24b9",
+					"ShadowsMode": 0,
+					"Visible": true,
+					"ReceiveDecals": false
+				}
+			]
+		}
+	}
+]
+}

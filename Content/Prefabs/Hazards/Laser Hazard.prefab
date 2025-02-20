@@ -1,0 +1,139 @@
+{
+	"ID": "326c323a42b5bdd6e65eebbd54ec1b45",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6512,
+	"Data": [
+	{
+		"ID": "b8b7f2174dc306988440aa9c282f78db",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"Name": "Laser Hazard"
+	},
+	{
+		"ID": "07676f2b47fe788e73b72aa812b45e0f",
+		"TypeName": "FlaxEngine.BoxCollider",
+		"ParentID": "b8b7f2174dc306988440aa9c282f78db",
+		"Name": "BoxCollider",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": -250.0,
+				"Z": 0.0
+			},
+			"Scale": {
+				"X": 10.0,
+				"Y": 0.20000000298023225,
+				"Z": 0.20000000298023225
+			}
+		},
+		"StaticFlags": 0,
+		"IsTrigger": true
+	},
+	{
+		"ID": "0a78c2ef407651cc830b4999798aaa6a",
+		"TypeName": "TrenchRun.Hazards.ContactDamage",
+		"ParentID": "07676f2b47fe788e73b72aa812b45e0f",
+		"V": {
+	"DamageOwner": "b8b7f2174dc306988440aa9c282f78db",
+	"DamagePerTick": 3,
+	"TickRate": 10.0
+}
+	},
+	{
+		"ID": "ea2c0ad74f753f7ed7bf45bdcbf31b21",
+		"TypeName": "TrenchRun.Hazards.TwoPositionCycle",
+		"ParentID": "07676f2b47fe788e73b72aa812b45e0f",
+		"V": {
+	"SecondPosition": {
+		"X": 0.0,
+		"Y": 500.0,
+		"Z": 0.0
+	},
+	"TravelTime": 3.0,
+	"RestTime": 1.0
+}
+	},
+	{
+		"ID": "f159db1f40a7bc33696c2889e21f249d",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "07676f2b47fe788e73b72aa812b45e0f",
+		"Name": "Visuals",
+		"Transform": {
+			"Scale": {
+				"X": 1.0,
+				"Y": 0.5,
+				"Z": 0.5
+			}
+		},
+		"StaticFlags": 0,
+		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "952903b446bc240467051eb1630a24b9",
+					"ShadowsMode": 0,
+					"Visible": true,
+					"ReceiveDecals": false
+				}
+			]
+		}
+	},
+	{
+		"ID": "0249fceb45c3349e88c87f8ae0491d22",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "b8b7f2174dc306988440aa9c282f78db",
+		"Name": "Cube 0",
+		"Transform": {
+			"Translation": {
+				"X": -515.0,
+				"Y": 0.0,
+				"Z": 0.0
+			},
+			"Scale": {
+				"X": 0.30000001192092898,
+				"Y": 5.5,
+				"Z": 0.30000001192092898
+			}
+		},
+		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "463e792d442361ca8b34ef9e9eca9689",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "333746e9473cde966b255ea8c9685cda",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "b8b7f2174dc306988440aa9c282f78db",
+		"Name": "Cube 1",
+		"Transform": {
+			"Translation": {
+				"X": 515.0,
+				"Y": 0.0,
+				"Z": 0.0
+			},
+			"Scale": {
+				"X": 0.30000001192092898,
+				"Y": 5.5,
+				"Z": 0.30000001192092898
+			}
+		},
+		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "463e792d442361ca8b34ef9e9eca9689",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	}
+]
+}
