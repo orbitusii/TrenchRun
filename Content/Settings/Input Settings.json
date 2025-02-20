@@ -9,7 +9,7 @@
 			"Mode": 1,
 			"Key": 0,
 			"MouseButton": 1,
-			"GamepadButton": 12,
+			"GamepadButton": 10,
 			"Gamepad": 0
 		},
 		{
@@ -57,7 +57,7 @@
 			"Mode": 0,
 			"Key": 0,
 			"MouseButton": 3,
-			"GamepadButton": 11,
+			"GamepadButton": 9,
 			"Gamepad": -1
 		},
 		{
@@ -188,6 +188,30 @@
 			"Sensitivity": 1.0,
 			"Gravity": 1.0,
 			"Scale": -1.0,
+			"Snap": false
+		},
+		{
+			"Name": "Trigger R",
+			"Axis": 8,
+			"Gamepad": 0,
+			"PositiveButton": 0,
+			"NegativeButton": 0,
+			"DeadZone": 0.19,
+			"Sensitivity": 1.0,
+			"Gravity": 1.0,
+			"Scale": 1.0,
+			"Snap": false
+		},
+		{
+			"Name": "Trigger L",
+			"Axis": 7,
+			"Gamepad": 0,
+			"PositiveButton": 0,
+			"NegativeButton": 0,
+			"DeadZone": 0.19,
+			"Sensitivity": 1.0,
+			"Gravity": 1.0,
+			"Scale": 1.0,
 			"Snap": false
 		}
 	]

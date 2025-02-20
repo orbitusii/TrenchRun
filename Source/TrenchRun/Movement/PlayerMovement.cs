@@ -34,18 +34,19 @@ public class PlayerMovement : Script
         DoAiming();
     }
 
-    private void DoMovement ()
+    private void DoMovement()
     {
         bool isPreciseAim = Input.GetAction("Aim");
-        float fwdBack = Input.GetAxis("Vertical");
-        float strafe = Input.GetAxis("Horizontal");
+        float fwdBack = Input.GetAxis("Trigger R") - Input.GetAxis("Trigger L");
+        float strafeVert = Input.GetAxis("Vertical");
+        float strafeHorz = Input.GetAxis("Horizontal");
         float aimVert = Input.GetAxis("Mouse Y");
         float aimHorz = Input.GetAxis("Mouse X");
         Vector3 motion = Vector3.Zero;
 
-        if (isPreciseAim)
+        if(isPreciseAim)
         {
-            if(AimPosition is null)
+            if (AimPosition is null)
             {
                 bool hitsomething = Physics.RayCast(Actor.Position, Actor.Transform.Forward, out RayCastHit hit, AimScanDistance, AimScanLayers, hitTriggers: false);
 
@@ -56,26 +57,24 @@ public class PlayerMovement : Script
             // Update AimPosition if the target is an aim target
             AimPosition = AimTarget?.Position ?? AimPosition;
             //Debug.Log(AimPosition);
-
-            motion = new Vector3(strafe * StrafeSpeed, (InvertAimedPitch ? -aimVert : aimVert) * StrafeSpeed, fwdBack * (fwdBack >= 0 ? ForwardSpeed : StrafeSpeed));
         }
-        else
+        else if (AimPosition is not null)
         {
-            if(AimPosition is not null)
-            {
-                AimPosition = null;
-                AimTarget = null;
-            }
-
-            motion = new Vector3(strafe * StrafeSpeed, 0, fwdBack * (fwdBack >= 0 ? ForwardSpeed : StrafeSpeed));
+            AimPosition = null;
+            AimTarget = null;
         }
+
+        motion = new Vector3(strafeHorz * StrafeSpeed, strafeVert * StrafeSpeed, fwdBack * StrafeSpeed);
+        motion = Vector3.ClampLength(motion, StrafeSpeed);
+
+        motion.Z = fwdBack > 0 ? fwdBack * ForwardSpeed : motion.Z;
 
         Vector3 worldMotion = Actor.Transform.LocalToWorldVector(motion);
 
         rb.AddMovement(worldMotion);
     }
 
-    private void ResolveHit (RayCastHit hit)
+    private void ResolveHit(RayCastHit hit)
     {
         Tag t = Tags.Get("AimTarget");
 
@@ -87,7 +86,7 @@ public class PlayerMovement : Script
         else AimPosition = hit.Point;
     }
 
-    private void DoAiming ()
+    private void DoAiming()
     {
         bool isPreciseAim = Input.GetAction("Aim");
         float fwdBack = Input.GetAxis("Vertical");
