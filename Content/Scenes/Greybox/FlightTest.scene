@@ -106,6 +106,7 @@
 			"V": {
 	"ForwardSpeed": 16.0,
 	"StrafeSpeed": 10.0,
+	"PitchLimit": 85.0,
 	"AimScanDistance": 3000.0,
 	"AimScanLayers": {
 		"Mask": 1

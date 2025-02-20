@@ -16,6 +16,7 @@ public class PlayerMovement : Script
     public float StrafeSpeed = 1;
 
     public float RotationSpeed = 1;
+    public float PitchLimit = 89;
 
     public float AimScanDistance;
     public LayersMask AimScanLayers;
@@ -27,6 +28,13 @@ public class PlayerMovement : Script
 
     public bool InvertAimedPitch = false;
     public bool InvertAimedRoll = false;
+
+    private Vector3 aimVector;
+
+    public override void OnStart()
+    {
+        aimVector = Actor.Transform.Forward;
+    }
 
     public override void OnFixedUpdate()
     {
@@ -40,8 +48,6 @@ public class PlayerMovement : Script
         float fwdBack = Input.GetAxis("Trigger R") - Input.GetAxis("Trigger L");
         float strafeVert = Input.GetAxis("Vertical");
         float strafeHorz = Input.GetAxis("Horizontal");
-        float aimVert = Input.GetAxis("Mouse Y");
-        float aimHorz = Input.GetAxis("Mouse X");
         Vector3 motion = Vector3.Zero;
 
         if(isPreciseAim)
@@ -96,15 +102,33 @@ public class PlayerMovement : Script
 
         if (isPreciseAim && AimPosition is not null)
         {
-            Actor.Orientation = Quaternion.LookRotation((AimPosition ?? throw new NullReferenceException()) - Actor.Position, Actor.Transform.Up) * Quaternion.Euler(0, 0, (InvertAimedRoll ? -aimHorz : aimHorz) * RotationSpeed * 10 * Time.DeltaTime * Mathf.Pi);
+            Actor.Orientation = Quaternion.LookRotation((AimPosition ?? throw new NullReferenceException()) - Actor.Position, Vector3.Up);
+                //* Quaternion.Euler(0, 0, (InvertAimedRoll ? -aimHorz : aimHorz) * RotationSpeed * 10 * Time.DeltaTime * Mathf.Pi);
         }
         else
         {
-            Vector3 rotationAxis = new Vector3(aimVert, aimHorz, 0);
-            Quaternion pitch = Quaternion.RotationAxis(Vector3.Right, aimVert * RotationSpeed * Time.DeltaTime * Mathf.Pi);
+            // * Mathf.Cos(Actor.EulerAngles.X * Mathf.DegreesToRadians)
+
+            float pitchAngle = Actor.EulerAngles.X;
+            float clampedAimVert = Mathf.Clamp(aimVert, pitchAngle <= -PitchLimit ? 0 : -1, pitchAngle >= PitchLimit ? 0 : 1);
+
+            Quaternion pitch = Quaternion.RotationAxis(Actor.Transform.Right, clampedAimVert * RotationSpeed * Time.DeltaTime * Mathf.Pi);
             Quaternion yaw = Quaternion.RotationAxis(Vector3.Up, aimHorz * RotationSpeed * Time.DeltaTime * Mathf.Pi);
 
-            Actor.Orientation = Actor.Orientation * pitch * yaw;
+            Vector3 newAimVector = Vector3.Transform(aimVector, pitch * yaw);
+
+            Quaternion oldOrientation = Actor.Orientation;
+            Quaternion newOrientation = Quaternion.LookRotation(newAimVector, Vector3.Up);
+
+            if (Mathf.Abs(newOrientation.Y - newOrientation.Y) > 90)
+            {
+                newOrientation = oldOrientation;
+                newAimVector = Vector3.Transform(Vector3.Forward, oldOrientation);
+            }
+
+            Actor.Orientation = newOrientation;
+
+            aimVector = newAimVector;
         }
     }
 }
