@@ -1,0 +1,53 @@
+{
+	"ID": "2281bb524ec97e5f178c49aaf390feaf",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6512,
+	"Data": [
+	{
+		"ID": "ad089f02439b30b02d83b5b3a86a2a8d",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"Name": "Root"
+	},
+	{
+		"ID": "370846234fd71a001d2311970a7cd639",
+		"TypeName": "FlaxEngine.TextRender",
+		"ParentID": "ad089f02439b30b02d83b5b3a86a2a8d",
+		"Name": "TextRender",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": -1.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 1.0,
+				"Z": -0.0,
+				"W": -4.371138828673793e-8
+			}
+		},
+		"Text": "ROOM\n01",
+		"Color": {
+			"R": 0.949999988079071,
+			"G": 0.7955279350280762,
+			"B": 0.6808850765228272,
+			"A": 1.0
+		},
+		"Size": 150.0,
+		"Material": "e72782bd4d898e2f236ca3be780438af",
+		"Font": "ab96b25a49461d9f4f819484cf5c8213",
+		"ShadowsMode": 1,
+		"Bounds": {
+			"Location": {
+				"X": -200.0,
+				"Y": -200.0
+			},
+			"Size": {
+				"X": 400.0,
+				"Y": 400.0
+			}
+		},
+		"Wrapping": 1
+	}
+]
+}

@@ -1,0 +1,464 @@
+{
+	"ID": "81ab098f48a4f9b092d18591e02b5d66",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6512,
+	"Data": [
+	{
+		"ID": "4215ba26460adf744975aaaf36cba7f7",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"Name": "RootNode"
+	},
+	{
+		"ID": "afde26ab4999a13aef433e918b0d7364",
+		"TypeName": "FlaxEngine.ModelPrefab",
+		"ParentID": "4215ba26460adf744975aaaf36cba7f7",
+		"ImportPath": "Workflow/Models/Environment/Rooms - Greybox.fbx",
+		"ImportOptions": {
+			"Type": 3,
+			"MergeMeshes": false,
+			"ImportMaterials": false,
+			"ImportMaterialsAsInstances": true,
+			"InstanceToImportAs": "463e792d442361ca8b34ef9e9eca9689",
+			"SubAssetFolder": "Greybox"
+		}
+	},
+	{
+		"ID": "759cc5414a0270b0cee3c7b4f570cc5d",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "4215ba26460adf744975aaaf36cba7f7",
+		"Name": "30x30x15 Cross",
+		"Transform": {
+			"Translation": {
+				"X": -2500.0,
+				"Y": 0.0,
+				"Z": -2500.0
+			}
+		},
+		"Model": "7ce718b74b1640d42d1f5fb0f1cb9952",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "e4028fb34775232c65c52e863724c5bc",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "759cc5414a0270b0cee3c7b4f570cc5d",
+		"Name": "Door.South",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": -1500.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 1.0,
+				"Z": -0.0,
+				"W": -4.371138828673793e-8
+			}
+		}
+	},
+	{
+		"ID": "79e652e447886a4aacfca5887cf0453c",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "759cc5414a0270b0cee3c7b4f570cc5d",
+		"Name": "Door.West",
+		"Transform": {
+			"Translation": {
+				"X": -1500.0,
+				"Y": 0.0,
+				"Z": 0.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": -0.7071068286895752,
+				"Z": 0.0,
+				"W": 0.7071068286895752
+			}
+		}
+	},
+	{
+		"ID": "a3a796a44ba85f489beaa7af2ea4e1c4",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "759cc5414a0270b0cee3c7b4f570cc5d",
+		"Name": "Door.East",
+		"Transform": {
+			"Translation": {
+				"X": 1500.0,
+				"Y": 0.0,
+				"Z": 0.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 0.7071068286895752,
+				"Z": 0.0,
+				"W": 0.7071068286895752
+			}
+		}
+	},
+	{
+		"ID": "45cbd8fd42d6bfeeceae03ac44ae9c61",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "759cc5414a0270b0cee3c7b4f570cc5d",
+		"Name": "Door.North",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 1500.0
+			}
+		}
+	},
+	{
+		"ID": "eba269ed4bb1ec821b401e8ab2a50d09",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "4215ba26460adf744975aaaf36cba7f7",
+		"Name": "30x30x15 Straight",
+		"Transform": {
+			"Translation": {
+				"X": -12500.0,
+				"Y": 0.0,
+				"Z": -2500.0
+			}
+		},
+		"Model": "96bdc820480d81b890db8ba54bdd9e85",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "afb99ce4431afc4e233c158213290cac",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "eba269ed4bb1ec821b401e8ab2a50d09",
+		"Name": "Door.Straight.A",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 1500.0
+			}
+		}
+	},
+	{
+		"ID": "1ef909604cb9cc4820f5079cae07c47c",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "eba269ed4bb1ec821b401e8ab2a50d09",
+		"Name": "Door.Straight.B",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": -1500.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 1.0,
+				"Z": -0.0,
+				"W": -4.371138828673793e-8
+			}
+		}
+	},
+	{
+		"ID": "30266c6d47cb007c5b69f3a63489e8b4",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "4215ba26460adf744975aaaf36cba7f7",
+		"Name": "30x30x15 Tee",
+		"Transform": {
+			"Translation": {
+				"X": -7500.0,
+				"Y": 0.0,
+				"Z": -2500.0
+			}
+		},
+		"Model": "b8d4b06345f1fc405c2f8694c1ce93d0",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "61f7e18c45c2a6f82095b98cf6a232dc",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "30266c6d47cb007c5b69f3a63489e8b4",
+		"Name": "Door.Tee.Center",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 1500.0
+			}
+		}
+	},
+	{
+		"ID": "81b061b549cb59484ff3d9863de90c8c",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "30266c6d47cb007c5b69f3a63489e8b4",
+		"Name": "Door.Tee.Left",
+		"Transform": {
+			"Translation": {
+				"X": -1500.0,
+				"Y": 0.0,
+				"Z": 0.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": -0.7071068286895752,
+				"Z": 0.0,
+				"W": 0.7071068286895752
+			}
+		}
+	},
+	{
+		"ID": "5fb419cb48ab2e9b2405fa80656efc47",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "30266c6d47cb007c5b69f3a63489e8b4",
+		"Name": "Door.Tee.Right",
+		"Transform": {
+			"Translation": {
+				"X": 1500.0,
+				"Y": 0.0,
+				"Z": 0.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 0.7071068286895752,
+				"Z": 0.0,
+				"W": 0.7071068286895752
+			}
+		}
+	},
+	{
+		"ID": "f36a0db54acee547f99479b434d16fbc",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "4215ba26460adf744975aaaf36cba7f7",
+		"Name": "30x30x15 End",
+		"Transform": {
+			"Translation": {
+				"X": -22500.0,
+				"Y": 0.0,
+				"Z": -2500.0
+			}
+		},
+		"Model": "ca9bc88b4a906ae9601e0ca0a988a3dc",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "3ea65f0c43805d55129d12a546eff2be",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "f36a0db54acee547f99479b434d16fbc",
+		"Name": "Door.End",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 1500.0
+			}
+		}
+	},
+	{
+		"ID": "e5cb4f824e6367cd999838809fe5694a",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "4215ba26460adf744975aaaf36cba7f7",
+		"Name": "Hallway.Cross",
+		"Transform": {
+			"Translation": {
+				"X": -2500.0,
+				"Y": 0.0,
+				"Z": -7500.0
+			}
+		},
+		"Model": "d06ede6a4a0207db8252ed8267f6a9a1",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "a91e93b74ac336c7b0d06fbd1a7452ab",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "4215ba26460adf744975aaaf36cba7f7",
+		"Name": "Hallway.Straight",
+		"Transform": {
+			"Translation": {
+				"X": -12500.0,
+				"Y": 0.0,
+				"Z": -7500.0
+			}
+		},
+		"Model": "67f416f04a510f3ff5a590aa0001796b",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "e8094d4040acbda7e481539d6ee4fc08",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "4215ba26460adf744975aaaf36cba7f7",
+		"Name": "Hallway.Tee",
+		"Transform": {
+			"Translation": {
+				"X": -7500.0,
+				"Y": 0.0,
+				"Z": -7500.0
+			}
+		},
+		"Model": "a9866e7445e54ea3b9c76db86135ad8f",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "a2ce2f97401d7d1011aff6acedda6b63",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "4215ba26460adf744975aaaf36cba7f7",
+		"Name": "30x30x15 Corner",
+		"Transform": {
+			"Translation": {
+				"X": -17500.0,
+				"Y": 0.0,
+				"Z": -2500.0
+			}
+		},
+		"Model": "6c9109e445a2eeff8176d7940d460597",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "6a9343bc4ae28aade046c7b9411f1ba6",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "a2ce2f97401d7d1011aff6acedda6b63",
+		"Name": "Door.Corner.Left",
+		"Transform": {
+			"Translation": {
+				"X": -1500.0,
+				"Y": 0.0,
+				"Z": 0.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": -0.7071068286895752,
+				"Z": 0.0,
+				"W": 0.7071068286895752
+			}
+		}
+	},
+	{
+		"ID": "15097c5942496636a7ace495e2339216",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "a2ce2f97401d7d1011aff6acedda6b63",
+		"Name": "Door.Corner.Right",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 1500.0
+			}
+		}
+	},
+	{
+		"ID": "90a571724a3c4de420a59a88ec67c63b",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "4215ba26460adf744975aaaf36cba7f7",
+		"Name": "Hallway.Corner.Square",
+		"Transform": {
+			"Translation": {
+				"X": -17500.0,
+				"Y": 0.0,
+				"Z": -7500.0
+			}
+		},
+		"Model": "e662b3d54b3c5c7ca040b989570cc6e5",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "e656f8b64fc60922a9ebe489bf3a9e88",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "4215ba26460adf744975aaaf36cba7f7",
+		"Name": "Hallway.Corner.Curved",
+		"Transform": {
+			"Translation": {
+				"X": -22500.0,
+				"Y": 0.0,
+				"Z": -7500.0
+			}
+		},
+		"Model": "da4465064384af822bcca2a4e85620db",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	}
+]
+}

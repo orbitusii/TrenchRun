@@ -1,0 +1,73 @@
+{
+	"ID": "c7bf1df74ceb63c3d677af85d56d6ec5",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6512,
+	"Data": [
+	{
+		"ID": "fca49c0c41579a1151b6ecace94e3c44",
+		"TypeName": "FlaxEngine.StaticModel",
+		"Name": "30x30x15 End",
+		"Model": "ca9bc88b4a906ae9601e0ca0a988a3dc",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "042f99a44bc5c1b266bd3f8b0771c6a7",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "fca49c0c41579a1151b6ecace94e3c44",
+		"Name": "Door.End",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 1500.0
+			}
+		}
+	},
+	{
+		"ID": "b3eb31cb41f8851f0845009d3430c1b9",
+		"PrefabID": "b55b4f4e4ab269fba6e3518dad0de7ef",
+		"PrefabObjectID": "abb28fcf4ba8a10be79945b2726ebaac",
+		"ParentID": "fca49c0c41579a1151b6ecace94e3c44"
+	},
+	{
+		"ID": "dfb53c3f477773805f31debb21158d45",
+		"PrefabID": "b55b4f4e4ab269fba6e3518dad0de7ef",
+		"PrefabObjectID": "5bcbf3fe48ed47a51f482c9aaa1d4b5d",
+		"ParentID": "b3eb31cb41f8851f0845009d3430c1b9"
+	},
+	{
+		"ID": "b5b1dce14ec936c760ecaab2130d62db",
+		"PrefabID": "b55b4f4e4ab269fba6e3518dad0de7ef",
+		"PrefabObjectID": "a189cbb64b4d5b53118acc9fc0383aa6",
+		"ParentID": "b3eb31cb41f8851f0845009d3430c1b9"
+	},
+	{
+		"ID": "65d31e6f425dbd7ffd98cbbb8b254123",
+		"PrefabID": "b55b4f4e4ab269fba6e3518dad0de7ef",
+		"PrefabObjectID": "15c929d344e299f719acd4a0b6220edc",
+		"ParentID": "b3eb31cb41f8851f0845009d3430c1b9"
+	},
+	{
+		"ID": "f18a6adc4c282682b3a586a4cb216169",
+		"PrefabID": "b55b4f4e4ab269fba6e3518dad0de7ef",
+		"PrefabObjectID": "7bd8ce474b5ea7d7c8e2308a1469563f",
+		"ParentID": "b3eb31cb41f8851f0845009d3430c1b9"
+	},
+	{
+		"ID": "3e1c48e745c1f5e992de4ab673259498",
+		"TypeName": "FlaxEngine.MeshCollider",
+		"ParentID": "fca49c0c41579a1151b6ecace94e3c44",
+		"Name": "MeshCollider",
+		"CollisionData": "bc42b9a94de602dca6e96c9af1ba0b48"
+	}
+]
+}

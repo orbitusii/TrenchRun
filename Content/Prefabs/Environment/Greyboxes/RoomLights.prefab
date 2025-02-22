@@ -1,0 +1,108 @@
+{
+	"ID": "b55b4f4e4ab269fba6e3518dad0de7ef",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6512,
+	"Data": [
+	{
+		"ID": "abb28fcf4ba8a10be79945b2726ebaac",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"Name": "RoomLights"
+	},
+	{
+		"ID": "5bcbf3fe48ed47a51f482c9aaa1d4b5d",
+		"TypeName": "FlaxEngine.PointLight",
+		"ParentID": "abb28fcf4ba8a10be79945b2726ebaac",
+		"Name": "OverheadLight",
+		"Transform": {
+			"Translation": {
+				"X": 750.0,
+				"Y": 725.0,
+				"Z": 750.0
+			},
+			"Orientation": {
+				"X": 0.7071068286895752,
+				"Y": 0.0,
+				"Z": 0.0,
+				"W": 0.7071068286895752
+			}
+		},
+		"Brightness": 2.0,
+		"ViewDistance": 9000.0,
+		"ShadowsMode": 1,
+		"Radius": 3000.0,
+		"FallOffExponent": 2.0
+	},
+	{
+		"ID": "a189cbb64b4d5b53118acc9fc0383aa6",
+		"TypeName": "FlaxEngine.PointLight",
+		"ParentID": "abb28fcf4ba8a10be79945b2726ebaac",
+		"Name": "OverheadLight 0",
+		"Transform": {
+			"Translation": {
+				"X": 750.0,
+				"Y": 725.0,
+				"Z": -750.0
+			},
+			"Orientation": {
+				"X": 0.7071068286895752,
+				"Y": 0.0,
+				"Z": 0.0,
+				"W": 0.7071068286895752
+			}
+		},
+		"Brightness": 2.0,
+		"ViewDistance": 9000.0,
+		"ShadowsMode": 1,
+		"Radius": 3000.0,
+		"FallOffExponent": 2.0
+	},
+	{
+		"ID": "15c929d344e299f719acd4a0b6220edc",
+		"TypeName": "FlaxEngine.PointLight",
+		"ParentID": "abb28fcf4ba8a10be79945b2726ebaac",
+		"Name": "OverheadLight 1",
+		"Transform": {
+			"Translation": {
+				"X": -750.0,
+				"Y": 725.0,
+				"Z": -750.0
+			},
+			"Orientation": {
+				"X": 0.7071068286895752,
+				"Y": 0.0,
+				"Z": 0.0,
+				"W": 0.7071068286895752
+			}
+		},
+		"Brightness": 2.0,
+		"ViewDistance": 9000.0,
+		"ShadowsMode": 1,
+		"Radius": 3000.0,
+		"FallOffExponent": 2.0
+	},
+	{
+		"ID": "7bd8ce474b5ea7d7c8e2308a1469563f",
+		"TypeName": "FlaxEngine.PointLight",
+		"ParentID": "abb28fcf4ba8a10be79945b2726ebaac",
+		"Name": "OverheadLight 2",
+		"Transform": {
+			"Translation": {
+				"X": -750.0,
+				"Y": 725.0,
+				"Z": 750.0
+			},
+			"Orientation": {
+				"X": 0.7071068286895752,
+				"Y": 0.0,
+				"Z": 0.0,
+				"W": 0.7071068286895752
+			}
+		},
+		"Brightness": 2.0,
+		"ViewDistance": 9000.0,
+		"ShadowsMode": 1,
+		"Radius": 3000.0,
+		"FallOffExponent": 2.0
+	}
+]
+}

@@ -1,0 +1,92 @@
+{
+	"ID": "9efdcbd14f2ed813698ab3a1c4dda5c5",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6512,
+	"Data": [
+	{
+		"ID": "47183642404a8893f1c3f3b332b0b106",
+		"TypeName": "FlaxEngine.StaticModel",
+		"Name": "30x30x15 Corner",
+		"Model": "6c9109e445a2eeff8176d7940d460597",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "b6830d1b4dee5cd1982af190e4f36b55",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "47183642404a8893f1c3f3b332b0b106",
+		"Name": "Door.Corner.Left",
+		"Transform": {
+			"Translation": {
+				"X": -1500.0,
+				"Y": 0.0,
+				"Z": 0.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": -0.7071068286895752,
+				"Z": 0.0,
+				"W": 0.7071068286895752
+			}
+		}
+	},
+	{
+		"ID": "4bfb35844e75b806b8bef8921704eb2a",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "47183642404a8893f1c3f3b332b0b106",
+		"Name": "Door.Corner.Right",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 1500.0
+			}
+		}
+	},
+	{
+		"ID": "3af7fa7d46ecb57ded8ba9babc25932a",
+		"PrefabID": "b55b4f4e4ab269fba6e3518dad0de7ef",
+		"PrefabObjectID": "abb28fcf4ba8a10be79945b2726ebaac",
+		"ParentID": "47183642404a8893f1c3f3b332b0b106"
+	},
+	{
+		"ID": "cab2396c48708a3142a85b94e43e8942",
+		"PrefabID": "b55b4f4e4ab269fba6e3518dad0de7ef",
+		"PrefabObjectID": "5bcbf3fe48ed47a51f482c9aaa1d4b5d",
+		"ParentID": "3af7fa7d46ecb57ded8ba9babc25932a"
+	},
+	{
+		"ID": "38734f1945f01b8436a70f9e3d545675",
+		"PrefabID": "b55b4f4e4ab269fba6e3518dad0de7ef",
+		"PrefabObjectID": "a189cbb64b4d5b53118acc9fc0383aa6",
+		"ParentID": "3af7fa7d46ecb57ded8ba9babc25932a"
+	},
+	{
+		"ID": "1f892914457503cd14d9d992ab0fcf47",
+		"PrefabID": "b55b4f4e4ab269fba6e3518dad0de7ef",
+		"PrefabObjectID": "15c929d344e299f719acd4a0b6220edc",
+		"ParentID": "3af7fa7d46ecb57ded8ba9babc25932a"
+	},
+	{
+		"ID": "77eb16584b7553ab6b6b04837308cc94",
+		"PrefabID": "b55b4f4e4ab269fba6e3518dad0de7ef",
+		"PrefabObjectID": "7bd8ce474b5ea7d7c8e2308a1469563f",
+		"ParentID": "3af7fa7d46ecb57ded8ba9babc25932a"
+	},
+	{
+		"ID": "d52040d74f6278437235558cae8c6a40",
+		"TypeName": "FlaxEngine.MeshCollider",
+		"ParentID": "47183642404a8893f1c3f3b332b0b106",
+		"Name": "MeshCollider",
+		"CollisionData": "a68bf0b7417b1e4273e8b59dcf6a8129"
+	}
+]
+}

@@ -1,0 +1,30 @@
+{
+	"ID": "96062a6444c1e6e16f21939a93c07584",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6512,
+	"Data": [
+	{
+		"ID": "8ce2b8cd43e3aed60febea9170070de9",
+		"TypeName": "FlaxEngine.StaticModel",
+		"Name": "Hallway.Straight",
+		"Model": "67f416f04a510f3ff5a590aa0001796b",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "eeb4305e4479ee42326d5181eb4470ba",
+		"TypeName": "FlaxEngine.MeshCollider",
+		"ParentID": "8ce2b8cd43e3aed60febea9170070de9",
+		"Name": "MeshCollider",
+		"CollisionData": "466fab91408d0f9b42728da767b699de"
+	}
+]
+}
