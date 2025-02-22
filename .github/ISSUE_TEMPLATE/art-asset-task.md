@@ -6,6 +6,12 @@ labels: ''
 assignees: ''
 
 ---
+## Asset Logistics
+### **Asset Type:** 
+  - *Examples: "Model", "Texture", "Video", etc. to describe what the asset IS*
+  
+### **Category:** 
+  - *Examples: "Environment", "Enemy", "Power-Up", "UI", etc. to relate to Use Case below*
 
 ## Description
 
@@ -14,7 +20,8 @@ assignees: ''
 
 
 ## Steps
-- [ ] Model(s) started
+- [ ] Model(s)
+  - [ ] Create .blend files in `~/Workflow/[Asset Type]/`
 - [ ] UV Unwrapping
 - [ ] Texturing
 - [ ] Animation
