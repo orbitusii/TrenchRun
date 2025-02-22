@@ -45,8 +45,8 @@ public class PlayerMovement : Script
     private void DoMovement()
     {
         bool isPreciseAim = Input.GetAction("Aim");
-        float fwdBack = Input.GetAxis("Trigger R") - Input.GetAxis("Trigger L");
-        float strafeVert = Input.GetAxis("Vertical");
+        float fwdBack = Input.GetAxis("Vertical");
+        float strafeVert = Input.GetAxis("Trigger R") - Input.GetAxis("Trigger L");
         float strafeHorz = Input.GetAxis("Horizontal");
         Vector3 motion = Vector3.Zero;
 
@@ -75,7 +75,8 @@ public class PlayerMovement : Script
 
         motion.Z = fwdBack > 0 ? fwdBack * ForwardSpeed : motion.Z;
 
-        Vector3 worldMotion = Actor.Transform.LocalToWorldVector(motion);
+        Quaternion heading = Quaternion.Euler(0, Actor.EulerAngles.Y, 0);
+        Vector3 worldMotion = Vector3.Transform(motion, heading);
 
         rb.AddMovement(worldMotion);
     }
@@ -103,7 +104,9 @@ public class PlayerMovement : Script
         if (isPreciseAim && AimPosition is not null)
         {
             Actor.Orientation = Quaternion.LookRotation((AimPosition ?? throw new NullReferenceException()) - Actor.Position, Vector3.Up);
-                //* Quaternion.Euler(0, 0, (InvertAimedRoll ? -aimHorz : aimHorz) * RotationSpeed * 10 * Time.DeltaTime * Mathf.Pi);
+            //* Quaternion.Euler(0, 0, (InvertAimedRoll ? -aimHorz : aimHorz) * RotationSpeed * 10 * Time.DeltaTime * Mathf.Pi);
+
+            aimVector = Actor.Transform.Forward;
         }
         else
         {
