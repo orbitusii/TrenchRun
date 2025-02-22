@@ -80,13 +80,6 @@
 		"TypeName": "FlaxEngine.StaticModel",
 		"ParentID": "b253f3b14bb5b90f895a50a0cb4de074",
 		"Name": "Visuals",
-		"Transform": {
-			"Scale": {
-				"X": 1.0,
-				"Y": 0.5,
-				"Z": 0.5
-			}
-		},
 		"StaticFlags": 0,
 		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
 		"Buffer": {
@@ -138,13 +131,6 @@
 		"TypeName": "FlaxEngine.StaticModel",
 		"ParentID": "cd19f71c46f148fdc91d6eb848557eed",
 		"Name": "Visuals",
-		"Transform": {
-			"Scale": {
-				"X": 1.0,
-				"Y": 0.5,
-				"Z": 0.5
-			}
-		},
 		"StaticFlags": 0,
 		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
 		"Buffer": {
